@@ -1,11 +1,4 @@
 1- No ramo principal faça no mínimo 3 commits, em seguida utilize o git reset –hard de 2 commits anteriores (HEAD~2) e use o reflog para recuperar os dados perdidos.
-
-	Criar o repositorio	
-	git init
-	git remote add origin + link do repositorio
-
-	//crie um arquivo 
-
 	git add .
 	git commit -m "Primeiro commit"
 	git push origin Master
@@ -16,23 +9,6 @@
 	git commit -m "Terceiro commit"
 	git push 
 
-	// resetando os commits 
-	
-	git reset + codCommit --hard
-	git push --force
-	git reflog
-	
-	para voltar 
-	git reset + codCommit --hard
-	git push --force
-	
-
-2- No ramo principal faça no mínimo 5 commits, em seguida use o git reset para agrupar os 4 últimos commits.
-
-	commits igual ao exercicio 1
-	
-	resetando os commits 
-	
 	git reset + codCommit --hard
 	git push --force
 	git reflog
@@ -85,3 +61,14 @@
 
 	git tag -a nomeTag -m "mensagemTag" 
 	git push origin --tag nomeTag
+
+
+gitflow é muito é muito complexo,
+
+github flow é uma simplificação, tem só uma vesão, ciclus curtos e laçamentos frequentes 
+
+gitlab flow simplificação do gitflow, só que sem tempo para entregar
+
+trunk base tem uma ramificação só, sem equipes grandes 
+
+Integração continua, reduz o tempo de lançamento, garante um processo solido, mais pordutividade
